@@ -1,15 +1,10 @@
-/* General Reset */
-* {
+/* General */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Prevent horizontal overflow */
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 /* Buttons */
@@ -38,7 +33,6 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px; /* added padding to avoid overflow */
 }
 
 .travel-header::after {
@@ -55,15 +49,15 @@ html, body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px; /* reduced from 50px to 20px for smaller screens */
+  flex-wrap: wrap; /* fix menu overflow */
+  padding: 15px 20px; /* more space on sides */
   z-index: 1;
 }
 
 .travel-header .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* ensures nav items wrap on smaller screens */
+  gap: 25px;
 }
 
 .travel-header .nav-links a {
@@ -79,13 +73,12 @@ html, body {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 0 10px;
 }
 
 /* Sections */
 section {
   padding: 60px 20px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -110,8 +103,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   text-align: center;
-  flex: 1 1 280px; /* min width ensures cards don't shrink too small */
-  max-width: 350px; /* keeps cards consistent */
+  flex: 1 1 250px;
 }
 
 .card img, .testimonial-card img {
@@ -132,7 +124,6 @@ h2 {
 .contact-section {
   max-width: 600px;
   margin: 0 auto 50px auto;
-  padding: 0 10px; /* padding added to prevent side cut-off */
 }
 
 .contact-form input, .contact-form textarea {
@@ -173,4 +164,25 @@ footer {
   color: white;
   text-align: center;
   padding: 25px 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .travel-header .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .travel-header nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
 }
