@@ -4,7 +4,6 @@ body, html {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Buttons */
@@ -40,7 +39,7 @@ body, html {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.4); /* overlay for readability */
 }
 
 .travel-header nav {
@@ -49,21 +48,19 @@ body, html {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* allow items to wrap on small screens */
-  padding: 15px 20px;
+  padding: 15px 50px;
   z-index: 1;
 }
 
 .travel-header .logo {
-  flex: 1 1 200px; /* allow logo to shrink on small screens */
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .travel-header .nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
-  flex: 2 1 300px; /* allow nav links to shrink and wrap */
-  justify-content: flex-end;
 }
 
 .travel-header .nav-links a {
@@ -79,30 +76,30 @@ body, html {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 0 20px; /* add side padding to prevent clipping */
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
-/* Responsive nav for small screens */
-@media (max-width: 600px) {
-  .travel-header nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
 
-  .travel-header .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
-  }
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
 
-  .travel-header .nav-links a {
-    display: block;
-    padding: 8px 0;
-  }
+.hero-content .btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  background-color: #0b4c6a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+  background-color: #08435e;
 }
 
 /* Sections */
@@ -168,24 +165,6 @@ h2 {
 .contact-form button {
   width: 100%;
   font-size: 1.1rem;
-}
-
-/* Contact Header */
-.contact-header {
-  text-align: center;
-  padding: 40px 20px 20px 20px;
-}
-
-.back-btn {
-  text-decoration: none;
-  color: #0b4c6a;
-  display: inline-block;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.back-btn:hover {
-  color: #08435e;
 }
 
 /* Footer */
