@@ -1,194 +1,96 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; color: #333; }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  overflow-x: hidden;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  background: #0b4c6a;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #08435e;
-}
-
-/* Navbar */
+/* NAVBAR */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar .nav-links a:hover {
-  color: #ffd700;
-}
-
-/* Hero Section */
-.hero {
-  background: url('https://source.unsplash.com/1600x900/?travel,beach') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: 0.3s;
+  z-index: 1000;
+}
+.navbar.scrolled { background: rgba(0,0,0,0.85); }
+.navbar .logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
+.navbar ul { list-style: none; display: flex; gap: 25px; }
+.navbar a { color: #fff; text-decoration: none; font-weight: 500; }
+.navbar a:hover { color: #ffd700; }
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?travel,adventure') no-repeat center center/cover;
+  display: flex; justify-content: center; align-items: center;
+  text-align: center; color: #fff; position: relative;
+}
+.hero .overlay {
+  position: absolute; top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.55);
 }
-
-.hero-content {
-  position: relative;
-  z-index: 1;
+.hero-text { position: relative; z-index: 1; }
+.hero h1 { font-size: 3.2rem; margin-bottom: 15px; }
+.hero p { font-size: 1.2rem; margin-bottom: 20px; }
+.btn {
+  background: #0b4c6a; color: #fff; padding: 12px 30px;
+  border-radius: 25px; text-decoration: none; transition: 0.3s;
 }
+.btn:hover { background: #093b53; }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
+/* SECTIONS */
+section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
+section.alt { background: #f9f9f9; }
+h2 { font-size: 2.2rem; margin-bottom: 40px; color: #0b4c6a; }
 
-.hero-content p {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
+/* GRID */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
 
-/* Sections */
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 2rem;
-  color: #0b4c6a;
-}
-
-/* Cards */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
+/* CARDS */
 .card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background: #fff; border-radius: 12px; overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  text-align: center;
-  flex: 1 1 250px;
+  transition: 0.3s; cursor: pointer;
 }
+.card:hover { transform: translateY(-8px); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card h3 { padding: 15px; }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+/* TOURS */
+.tour {
+  padding: 25px; border-radius: 10px;
+  background: linear-gradient(135deg, #0b4c6a, #1783a6);
+  color: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
+.tour h3 { margin-bottom: 10px; }
 
-/* Why Us */
-.why-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+/* FEATURES */
+.feature { background: #fff; padding: 25px; border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+.feature i { font-size: 2rem; color: #0b4c6a; margin-bottom: 10px; }
+
+/* CONTACT FORM */
+.contact-form {
+  max-width: 600px; margin: auto;
+  display: flex; flex-direction: column; gap: 15px;
 }
-
-.why-card {
-  background: #f9f9f9;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: center;
-  flex: 1 1 250px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+.contact-form input, .contact-form textarea {
+  padding: 12px; border-radius: 8px; border: 1px solid #ccc;
 }
+.contact-form button { border: none; }
 
-/* Contact */
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form input, 
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  width: 100%;
-  font-size: 1.1rem;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
-  background: #0b4c6a;
-  color: #fff;
-  text-align: center;
-  padding: 25px 20px;
+  background: #0b4c6a; color: #fff;
+  text-align: center; padding: 30px 20px;
 }
+footer .socials { margin-top: 15px; }
+footer .socials a { color: #fff; margin: 0 10px; font-size: 1.2rem; transition: 0.3s; }
+footer .socials a:hover { color: #ffd700; }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
+  .navbar { padding: 15px 30px; }
+  .hero h1 { font-size: 2.2rem; }
 }
