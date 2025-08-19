@@ -3,125 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlobeTrek - Explore the World</title>
+  <title>Travel Website</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/1c2f9a01f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- HEADER with HERO IMAGE -->
+  <header class="travel-header">
+    <nav>
+      <div class="logo">TravelX</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="logo">GlobeTrek</div>
-    <ul class="nav-links">
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#tours">Tours</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Discover Your Next Adventure</h1>
-      <p>Tailored travel experiences across the globe</p>
-      <a href="#destinations" class="btn">Explore Now</a>
+    <div class="hero-content">
+      <h1>Explore the World with Us</h1>
+      <p>Adventure awaits at every destination</p>
+      <a href="#destinations" class="btn">Start Your Journey</a>
     </div>
   </header>
 
-  <!-- ===== DESTINATIONS ===== -->
-  <section id="destinations">
-    <h2>Top Destinations</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://source.unsplash.com/500x350/?paris" alt="Paris">
-        <h3>Paris</h3>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/500x350/?maldives" alt="Maldives">
-        <h3>Maldives</h3>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/500x350/?tokyo" alt="Tokyo">
-        <h3>Tokyo</h3>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/500x350/?newyork" alt="New York">
-        <h3>New York</h3>
-      </div>
-    </div>
+  <!-- MAIN SECTIONS -->
+  <section id="destinations" class="section">
+    <h2>Popular Destinations</h2>
+    <p>Discover the most amazing places around the globe.</p>
   </section>
 
-  <!-- ===== TOURS ===== -->
-  <section id="tours" class="alt">
-    <h2>Featured Tours</h2>
-    <div class="grid">
-      <div class="tour">
-        <h3>Romantic Europe</h3>
-        <p>10 Days | From $1299</p>
-      </div>
-      <div class="tour">
-        <h3>Asian Wonders</h3>
-        <p>14 Days | From $1799</p>
-      </div>
-      <div class="tour">
-        <h3>African Safari</h3>
-        <p>7 Days | From $999</p>
-      </div>
-    </div>
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <p>From flights to hotels, we provide complete travel solutions.</p>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about">
-    <h2>Why Choose GlobeTrek?</h2>
-    <div class="grid">
-      <div class="feature">
-        <i class="fas fa-globe"></i>
-        <h4>Worldwide Reach</h4>
-        <p>We connect you with destinations across the globe.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-hand-holding-usd"></i>
-        <h4>Best Prices</h4>
-        <p>Affordable packages without compromising quality.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-headset"></i>
-        <h4>24/7 Support</h4>
-        <p>We’re here to assist you anytime, anywhere.</p>
-      </div>
-    </div>
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <p>Hear from happy travelers who explored with us.</p>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="alt">
-    <h2>Get In Touch</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Get in touch for bookings and inquiries.</p>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 GlobeTrek | All Rights Reserved</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
   </footer>
 
+  <!-- SCRIPT -->
   <script>
-    // Navbar background change on scroll
-    window.addEventListener("scroll", function(){
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
   </script>
-
 </body>
 </html>
