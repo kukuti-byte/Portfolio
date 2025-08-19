@@ -3,128 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore The World - Travel Website</title>
+  <title>GlobeTrek - Explore the World</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1c2f9a01f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- ===== HEADER / HERO ===== -->
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">GlobeTrek</div>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo">TravelNow</div>
-      <ul class="nav-links">
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Explore The World With Us</h1>
-      <p>Unforgettable journeys, handpicked just for you.</p>
-      <a href="#packages" class="btn">Plan Your Trip</a>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Discover Your Next Adventure</h1>
+      <p>Tailored travel experiences across the globe</p>
+      <a href="#destinations" class="btn">Explore Now</a>
     </div>
   </header>
 
-  <!-- ===== POPULAR DESTINATIONS ===== -->
+  <!-- ===== DESTINATIONS ===== -->
   <section id="destinations">
-    <h2>Popular Destinations</h2>
-    <div class="cards">
+    <h2>Top Destinations</h2>
+    <div class="grid">
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+        <img src="https://source.unsplash.com/500x350/?paris" alt="Paris">
         <h3>Paris</h3>
-        <p>The city of love, art and culture.</p>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?maldives" alt="Maldives">
+        <img src="https://source.unsplash.com/500x350/?maldives" alt="Maldives">
         <h3>Maldives</h3>
-        <p>Experience tropical paradise like never before.</p>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
+        <img src="https://source.unsplash.com/500x350/?tokyo" alt="Tokyo">
         <h3>Tokyo</h3>
-        <p>A futuristic city blending tradition and innovation.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/500x350/?newyork" alt="New York">
+        <h3>New York</h3>
       </div>
     </div>
   </section>
 
-  <!-- ===== WHY TRAVEL WITH US ===== -->
-  <section id="why">
-    <h2>Why Travel With Us</h2>
-    <div class="why-cards">
-      <div class="why-card">
-        <h3>🌍 Trusted Experts</h3>
-        <p>We have years of experience in global travel.</p>
+  <!-- ===== TOURS ===== -->
+  <section id="tours" class="alt">
+    <h2>Featured Tours</h2>
+    <div class="grid">
+      <div class="tour">
+        <h3>Romantic Europe</h3>
+        <p>10 Days | From $1299</p>
       </div>
-      <div class="why-card">
-        <h3>💰 Affordable Packages</h3>
-        <p>We offer budget-friendly and luxury options.</p>
+      <div class="tour">
+        <h3>Asian Wonders</h3>
+        <p>14 Days | From $1799</p>
       </div>
-      <div class="why-card">
-        <h3>📞 24/7 Support</h3>
-        <p>Your journey is backed with our full-time support.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TRAVEL PACKAGES ===== -->
-  <section id="packages">
-    <h2>Our Travel Packages</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?bali" alt="Bali">
-        <h3>Summer in Bali</h3>
-        <p>7 nights package including guided tours.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?rome" alt="Rome">
-        <h3>Romantic Rome</h3>
-        <p>5 nights package including museum tickets.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?newyork" alt="New York">
-        <h3>New York Adventure</h3>
-        <p>6 nights package including city tours.</p>
+      <div class="tour">
+        <h3>African Safari</h3>
+        <p>7 Days | From $999</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials">
-    <h2>What Our Travelers Say</h2>
-    <div class="cards">
-      <div class="card">
-        <p>“The trip was perfectly planned. Best holiday ever!”</p>
-        <h4>- Sarah K.</h4>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2>Why Choose GlobeTrek?</h2>
+    <div class="grid">
+      <div class="feature">
+        <i class="fas fa-globe"></i>
+        <h4>Worldwide Reach</h4>
+        <p>We connect you with destinations across the globe.</p>
       </div>
-      <div class="card">
-        <p>“Affordable and amazing service. Highly recommend!”</p>
-        <h4>- John D.</h4>
+      <div class="feature">
+        <i class="fas fa-hand-holding-usd"></i>
+        <h4>Best Prices</h4>
+        <p>Affordable packages without compromising quality.</p>
       </div>
-      <div class="card">
-        <p>“The support team was always there. Great experience!”</p>
-        <h4>- Aisha M.</h4>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h4>24/7 Support</h4>
+        <p>We’re here to assist you anytime, anywhere.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT FORM ===== -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="alt">
+    <h2>Get In Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 TravelNow. All rights reserved.</p>
+    <p>&copy; 2025 GlobeTrek | All Rights Reserved</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
+
+  <script>
+    // Navbar background change on scroll
+    window.addEventListener("scroll", function(){
+      const navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
 
 </body>
 </html>
