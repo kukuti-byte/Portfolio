@@ -30,7 +30,7 @@ I create modern, responsive, and professional websites and web apps.
 ## 📫 Contact Me
 - Email: *assalafytunganmaje@gmail.com*  
 - GitHub: [kukuti-byte](https://github.com/kukuti-byte)  
-- Portfolio: [Live Portfolio](https://kukuti-byte.github.io/portfolio2/)
+- Portfolio: [Live Portfolio](https://kukuti-byte.github.io/Portfolio/)
 
 ---
 
