@@ -9,12 +9,12 @@ I create modern, responsive, and professional websites and web apps.
 
 | Project | Description | View |
 |---------|-------------|------|
-| *Ecommerce Store* | A sleek, responsive online store showcasing products with modern UI. | [View Project](https://kukuti-byte.github.io/portfolio/Ecommerce-Store/) |
-| *EdTech Website* | An educational platform website with clean design and user-friendly interface. | [View Project](https://kukuti-byte.github.io/portfolio/EdTech-Website/) |
-| *Fitness Website* | A professional fitness & training website with multiple programs and contact form. | [View Project](https://kukuti-byte.github.io/portfolio/Fitness-Website/) |
-| *Restaurant Website* | A modern restaurant website with menu, reservation, and contact sections. | [View Project](https://kukuti-byte.github.io/portfolio/Restaurant-Website/) |
-| *Travel Website* | Travel booking website with destinations, packages, and contact form. | [View Project](https://kukuti-byte.github.io/portfolio/Travel-Website/) |
-| *Personal Portfolio* | My personal portfolio showcasing all projects and a contact form. | [View Project](https://kukuti-byte.github.io/portfolio/Personal-Portfolio/) |
+| *Ecommerce Store* | A sleek, responsive online store showcasing products with modern UI. | [View Project](https://kukuti-byte.github.io/Portfolio/Ecommerce-Store/) |
+| *EdTech Website* | An educational platform website with clean design and user-friendly interface. | [View Project](https://kukuti-byte.github.io/Portfolio/EdTech-Website/) |
+| *Fitness Website* | A professional fitness & training website with multiple programs and contact form. | [View Project](https://kukuti-byte.github.io/Portfolio/Fitness-Website/) |
+| *Restaurant Website* | A modern restaurant website with menu, reservation, and contact sections. | [View Project](https://kukuti-byte.github.io/Portfolio/Restaurant-Website/) |
+| *Travel Website* | Travel booking website with destinations, packages, and contact form. | [View Project](https://kukuti-byte.github.io/Portfolio/Travel-Website/) |
+| *Personal Portfolio* | My personal portfolio showcasing all projects and a contact form. | [View Project](https://kukuti-byte.github.io/Portfolio/Personal-Portfolio/) |
 
 ---
 
